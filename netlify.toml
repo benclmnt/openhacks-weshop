@@ -13,3 +13,10 @@
   force = true
   [redirects.headers]
     X-From = "Netlify"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  [redirects.headers]
+    X-From = "Netlify"

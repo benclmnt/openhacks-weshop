@@ -5,9 +5,6 @@ import data from './storeItems.json';
 import Items from './Items';
 
 const target =  "weshopgetcataloguebystoreid";
-if(process.env.NODE_ENV === 'production') {
-  target = 'api/' + target
-}
 
 function Store() {
   const [items, setItems] = React.useState(null);
