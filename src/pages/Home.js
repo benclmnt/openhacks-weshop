@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Iphone from '../assets/iphone.png'
+
 function Home() {
   React.useEffect(() => {
     var words = document.querySelectorAll('.word');
@@ -53,32 +55,29 @@ function Home() {
   },[]);
 
   return (
-    <div>
-      <div className="rotating-text" style={{ marginTop: '20%' }}>
-        <h1 className="mobile-hide" style={{ fontSize: 45, color: 'white' }}>
-          We are 
-        </h1>
-        <h1>
-          <span className="word col1" style={{ fontSize: 45, color: 'yellow' }}>
-            WeShop
-          </span>
-          <span className="word col2" style={{ fontSize: 45, color: 'orange' }}>
-            fighting Covid-19.
-          </span>
-          <span className="word col3" style={{ fontSize: 45, color: 'limegreen' }}>
-            shopping made fun.
-          </span>
-          <span className="word col4" style={{ fontSize: 45, color: 'mediumblue' }}>
-            a service for the consumer.
-          </span>
-          <span>
-            <img
-              src="Assets/images/iphone.png"
-              style={{ marginLeft: 600, marginTop: 1 }}
-            />
-          </span>
-        </h1>
-      </div>
+    <div className="home rotating-text">
+      <h1 className="mobile-hide" style={{ fontSize: 45, color: 'white' }}>
+        We are 
+      </h1>
+      <h1>
+        <span className="word col1" style={{ fontSize: 45, color: 'yellow' }}>
+          WeShop
+        </span>
+        <span className="word col2" style={{ fontSize: 45, color: 'orange' }}>
+          fighting Covid-19.
+        </span>
+        <span className="word col3" style={{ fontSize: 45, color: 'limegreen' }}>
+          shopping made fun.
+        </span>
+        <span className="word col4" style={{ fontSize: 45, color: 'mediumblue' }}>
+          a service for the consumer.
+        </span>
+        <span>
+          <img
+            src={Iphone}
+          />
+        </span>
+      </h1>
     </div>
   );
 }
