@@ -1,5 +1,5 @@
 export const HOME = '/';
 export const LOGIN = '/login';
-export const SIGNUP = '/signup';
+export const REGISTER = '/register';
 
 export const STORE = '/store/:storeid';
