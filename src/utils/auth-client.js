@@ -19,7 +19,10 @@ function getUser() {
   if (!token) {
     return Promise.resolve(null);
   }
-  return Promise.resolve({});
+  return Promise.resolve({
+    initials: 'WS',
+    id: '1234'
+  });
   // return client(API_WHOAMI).then(data => data.user);
 }
 
