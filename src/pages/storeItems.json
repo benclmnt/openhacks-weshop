@@ -1,0 +1,152 @@
+[
+  {
+    "id": "bb913e0a-059a-4608-a965-c088770d50fa",
+    "name": "Tasty Soft Pants",
+    "description": "Cupiditate excepturi et quo.",
+    "stock": 86,
+    "price": "30.00",
+    "dimensions": {
+      "height": 635,
+      "width": 277,
+      "depth": 233,
+      "weight": 8
+    },
+    "category": "Books",
+    "imageUrl": "https://source.unsplash.com/640x480?random=4467"
+  },
+  {
+    "id": "ec0c46b9-5495-40d9-8c35-b7d12cbd7b6b",
+    "name": "Handmade Frozen Bike",
+    "description": "Alias aut aut.",
+    "stock": 0,
+    "price": "832.00",
+    "dimensions": {
+      "height": 848,
+      "width": 1433,
+      "depth": 1341,
+      "weight": 6
+    },
+    "category": "Outdoors",
+    "imageUrl": "https://source.unsplash.com/640x480?random=24452"
+  },
+  {
+    "id": "140931e1-e95a-4bd8-82a9-0c82f093b266",
+    "name": "Sleek Frozen Cheese",
+    "description": "Tenetur ipsa voluptatem qui.",
+    "stock": 117,
+    "price": "353.00",
+    "dimensions": {
+      "height": 827,
+      "width": 75,
+      "depth": 37,
+      "weight": 2
+    },
+    "category": "Shoes",
+    "imageUrl": "https://source.unsplash.com/640x480?random=79730"
+  },
+  {
+    "id": "69ae64ad-db39-4b1f-914d-f7f7ed09ec9b",
+    "name": "Handmade Frozen Computer",
+    "description": "In dolorem a repellendus architecto.",
+    "stock": 144,
+    "price": "403.00",
+    "dimensions": {
+      "height": 1216,
+      "width": 1135,
+      "depth": 1373,
+      "weight": 9
+    },
+    "category": "Beauty",
+    "imageUrl": "https://source.unsplash.com/640x480?random=26071"
+  },
+  {
+    "id": "23e77d34-e281-4fbc-86cf-7a4b2691a9c4",
+    "name": "Sleek Plastic Keyboard",
+    "description": "Rerum sed enim eaque rerum molestias dolores in et in.",
+    "stock": 127,
+    "price": "553.00",
+    "dimensions": {
+      "height": 205,
+      "width": 859,
+      "depth": 922,
+      "weight": 2
+    },
+    "category": "Electronics",
+    "imageUrl": "https://source.unsplash.com/640x480?random=25749"
+  },
+  {
+    "id": "25793c5c-45ad-469b-8e48-39e4e13cccb5",
+    "name": "Rustic Cotton Gloves",
+    "description": "Ut sunt sed illo minima sed et.",
+    "stock": 127,
+    "price": "773.00",
+    "dimensions": {
+      "height": 1017,
+      "width": 947,
+      "depth": 266,
+      "weight": 9
+    },
+    "category": "Shoes",
+    "imageUrl": "https://source.unsplash.com/640x480?random=15780"
+  },
+  {
+    "id": "90665b8f-9650-4436-a50b-811ddf43afb2",
+    "name": "Generic Cotton Chair",
+    "description": "Et maxime consequatur et ut.",
+    "stock": 21,
+    "price": "520.00",
+    "dimensions": {
+      "height": 558,
+      "width": 723,
+      "depth": 1151,
+      "weight": 5
+    },
+    "category": "Books",
+    "imageUrl": "https://source.unsplash.com/640x480?random=79683"
+  },
+  {
+    "id": "3a012ac0-7ab0-43e0-8a1e-6de023935e0d",
+    "name": "Handmade Cotton Gloves",
+    "description": "Occaecati id sed nostrum in libero id autem quia consectetur.",
+    "stock": 137,
+    "price": "597.00",
+    "dimensions": {
+      "height": 651,
+      "width": 363,
+      "depth": 1346,
+      "weight": 1
+    },
+    "category": "Industrial",
+    "imageUrl": "https://source.unsplash.com/640x480?random=87562"
+  },
+  {
+    "id": "eab3254f-fde4-402c-bb3a-11600628a2fd",
+    "name": "Refined Frozen Salad",
+    "description": "Aspernatur beatae molestiae.",
+    "stock": 139,
+    "price": "287.00",
+    "dimensions": {
+      "height": 609,
+      "width": 855,
+      "depth": 1379,
+      "weight": 6
+    },
+    "category": "Health",
+    "imageUrl": "https://source.unsplash.com/640x480?random=88279"
+  },
+  {
+    "id": "fb615c32-fa1e-4e89-a71b-d4390f8faf8d",
+    "name": "Tasty Plastic Car",
+    "description": "Accusantium debitis ducimus non voluptatibus ex sit.",
+    "stock": 125,
+    "price": "595.00",
+    "dimensions": {
+      "height": 1214,
+      "width": 185,
+      "depth": 162,
+      "weight": 5
+    },
+    "category": "Music",
+    "imageUrl": "https://source.unsplash.com/640x480?random=47620"
+  }
+]
