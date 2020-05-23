@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Iphone from '../assets/iphone.png'
+import Iphone from '../assets/iphone.png';
 
 function Home() {
   React.useEffect(() => {
@@ -52,7 +52,7 @@ function Home() {
     };
     const timer = setInterval(rotateText, 3000);
     return () => clearInterval(timer);
-  },[]);
+  }, []);
 
   return (
     <div className="home rotating-text">
@@ -66,16 +66,20 @@ function Home() {
         <span className="word col2" style={{ fontSize: 45, color: 'orange' }}>
           fighting Covid-19.
         </span>
-        <span className="word col3" style={{ fontSize: 45, color: 'limegreen' }}>
+        <span
+          className="word col3"
+          style={{ fontSize: 45, color: 'limegreen' }}
+        >
           shopping made fun.
         </span>
-        <span className="word col4" style={{ fontSize: 45, color: 'mediumblue' }}>
+        <span
+          className="word col4"
+          style={{ fontSize: 45, color: 'mediumblue' }}
+        >
           a service for the consumer.
         </span>
         <span>
-          <img
-            src={Iphone}
-          />
+          <img src={Iphone} />
         </span>
       </h1>
     </div>

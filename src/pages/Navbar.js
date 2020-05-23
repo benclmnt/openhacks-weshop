@@ -81,7 +81,7 @@ const Navbar = props => {
               style={{
                 height: 60,
                 verticalAlign: 'middle',
-                paddingRight: 10,
+                paddingRight: 10
               }}
             />
             WeShop
@@ -108,15 +108,21 @@ const Navbar = props => {
                 style={{
                   height: 60,
                   verticalAlign: 'middle',
-                  paddingRight: 10,
-
+                  paddingRight: 10
                 }}
               />
               WeShop
             </span>
           </Link>
           <ul className="right">
-            <li>Test</li>
+            <li>
+              <NavLink to="/store">Store Near You</NavLink>
+            </li>
+            <li>
+              <NavLink to="/store/ad73c946-7ffb-4fea-9ede-721ed152d275">
+                Test Store
+              </NavLink>
+            </li>
             {isLoggedIn() ? (
               <li>
                 <a

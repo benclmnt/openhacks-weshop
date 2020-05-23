@@ -39,8 +39,9 @@ export async function client(endpoint, { body, file, ...customConfig } = {}) {
     config.body = JSON.stringify(body);
   }
 
-  const newEndpoint = process.env.NODE_ENV === 'production' ? `api/${endpoint}`: endpoint;
-  console.log("Called a fetch to this " + newEndpoint);
+  const newEndpoint =
+    process.env.NODE_ENV === 'production' ? `api/${endpoint}` : endpoint;
+  console.log('Called a fetch to this ' + newEndpoint);
   return await fetch(`/${newEndpoint}`, config).then(async response => {
     if (response.status === 401) {
       logout();

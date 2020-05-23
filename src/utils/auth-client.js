@@ -1,8 +1,5 @@
 import { client, LOCAL_STORAGE_KEY } from './client';
-import {
-  API_LOGIN,
-  API_REGISTER
-} from '../constants/api-url';
+import { API_LOGIN, API_REGISTER } from '../constants/api-url';
 import { LOGIN } from '../constants/url';
 
 function handleUserResponse({ token, ...user }) {
@@ -36,7 +33,7 @@ function register({ name, email, password }) {
   return client(API_REGISTER, {
     body: { user: { name, email, password } },
     redirectTo: LOGIN
-  })
+  });
 }
 
 function logout() {
@@ -54,11 +51,4 @@ function isLoggedIn() {
   return Boolean(getToken());
 }
 
-export {
-  login,
-  register,
-  logout,
-  getToken,
-  getUser,
-  isLoggedIn,
-};
+export { login, register, logout, getToken, getUser, isLoggedIn };

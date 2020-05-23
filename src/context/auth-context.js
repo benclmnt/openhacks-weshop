@@ -9,8 +9,6 @@ function AuthProvider(props) {
     user: null
   });
 
-  console.log(authClient.getUser());
-
   useEffect(() => {
     authClient.getUser().then(user => setData({ status: 'success', user }));
   }, []);

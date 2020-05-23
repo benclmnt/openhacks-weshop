@@ -29,7 +29,7 @@ function App() {
 
             <Route path={url.ADMIN} component={Dashboard} />*/}
 
-            <Route component={NotFound} /> 
+            <Route component={NotFound} />
           </Switch>
         </div>
         {/* <Footer /> */}

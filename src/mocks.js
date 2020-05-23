@@ -1,4 +1,4 @@
-import { setupWorker, rest } from 'msw'
+import { setupWorker, rest } from 'msw';
 
 import * as url from './constants/url';
 
@@ -10,10 +10,10 @@ const worker = setupWorker(
       ctx.delay(1500),
       ctx.status(202, 'Mocked status'),
       ctx.json({
-        message: 'Successful lol.',
-      }),
-    )
-  }),
-)
+        message: 'Successful lol.'
+      })
+    );
+  })
+);
 
 export { worker };

@@ -21,7 +21,7 @@ function Login(props) {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log("try to login with creds: ");
+    console.log('try to login with creds: ');
     console.log(state);
     authClient.login(state);
   };
