@@ -5,12 +5,20 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import AppProviders from './context';
 
-ReactDOM.render(
-  <AppProviders>
-    <App />
-  </AppProviders>,
-  document.getElementById('root')
-);
+// async function bootstrap() {
+//   const { worker } = require('./mocks');
+//   await worker.start();
+  ReactDOM.render(
+    <AppProviders>
+      <App />
+    </AppProviders>,
+    document.getElementById('root')
+  );
+// }
+
+// bootstrap();
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
