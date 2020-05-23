@@ -4,7 +4,10 @@ import { client } from '../utils/client';
 import data from './storeItems.json';
 import Items from './Items';
 
-const target =  "https://us-central1-aiot-fit-xlab.cloudfunctions.net/weshopgetcataloguebystoreid";
+const target =  "weshopgetcataloguebystoreid";
+if(process.env.NODE_ENV === 'production') {
+  target = 'api/' + target
+}
 
 function Store() {
   const [items, setItems] = React.useState(null);
@@ -19,7 +22,7 @@ function Store() {
 
   console.log(data);
 
-  const itemsList = data.map((item) => <Items item={item}/>);
+  const itemsList = data.map((item, index) => <Items item={item} key={index}/>);
   return data.length > 0 ? (
     <div className="row container">
       <h3>Walmart</h3>

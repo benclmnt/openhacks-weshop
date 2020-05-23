@@ -39,7 +39,7 @@ export async function client(endpoint, { body, file, ...customConfig } = {}) {
     config.body = JSON.stringify(body);
   }
 
-  return await fetch(`${endpoint}`, config).then(async response => {
+  return await fetch(`/${endpoint}`, config).then(async response => {
     if (response.status === 401) {
       logout();
       // TODO: shoule we refresh the page for them or redirect to login page ???
