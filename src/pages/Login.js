@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '~/context/auth-context';
-import { isLoggedIn } from '~/utils/auth-client';
+import { useAuth } from '../context/auth-context';
+import { isLoggedIn } from '../utils/auth-client';
 
 function Login(props) {
   const [state, setState] = useState({
@@ -30,7 +30,7 @@ function Login(props) {
 
   return (
     <div className="container">
-      <form className="grey lighten-4" onSubmit={handleSubmit}>
+      <form className="" onSubmit={handleSubmit}>
         <h5 className="grey-text text-darken-3">Sign In</h5>
         <div className="input-field">
           <label htmlFor="email">Email</label>

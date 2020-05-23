@@ -4,21 +4,22 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from './pages/Navbar.js';
 import Home from './pages/Home.js';
+import Login from './pages/Login.js';
+import * as url from './constants/url';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <div className="main-container grey lighten-4">
+        <div className="main-container">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/navbar" component={Navbar} />
+            <Route path={url.LOGIN} component={Login} />
             {/* <Route path={url.CATEGORIES} component={Category} />
             <Route path={url.ITINERARY} component={Itinerary} />
             <Route path={url.CHECKOUT} component={Checkout} />
 
-            <Route path={url.LOGIN} component={Login} />
             <Route path={url.SIGNUP} component={Signup} />
             <Route path={url.VERIFY_ACC} component={Verify} />
             <Route exact path={url.RESET_PASSWORD} component={ResetPassword} />
