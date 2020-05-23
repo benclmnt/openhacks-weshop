@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import * as authClient from '~/utils/auth-client';
+import * as authClient from '../utils/auth-client';
 
 const AuthContext = React.createContext();
 
@@ -8,6 +8,8 @@ function AuthProvider(props) {
     status: 'pending',
     user: null
   });
+
+  console.log(authClient.getUser());
 
   useEffect(() => {
     authClient.getUser().then(user => setData({ status: 'success', user }));
@@ -18,7 +20,7 @@ function AuthProvider(props) {
   // But we post-pone rendering any of the children until after we've determined
   // whether or not we have a user token and if we do, then we render a spinner
   // while we go retrieve that user's information.
-  if (status === 'pending') {
+  if (data.status === 'pending') {
     return 'Loading...';
   }
 
