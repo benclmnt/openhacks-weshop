@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WeShop</title>
+    <link href="https://cdn.jsdelivr.net/gh/LeifMessinger/lQuery@latest/extras/RotatingText/rotating-text.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+    font-family: 'Montserrat';
+
+
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+img {
+  float: right;
+  margin-left: 15px;
+  margin-top: -120px;
+}
+</style>
+
+  </head>
+  <body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" >WeShop</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+
+      <li><a href="login.html">Login</a></li>
+   
+     
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div class = "rotating-text" style="margin-top: 20%;">
+    <h1 class = "mobile-hide" style="font-size: 45px; color: white">We are </h1>
+    <h1>
+            <span class = "word col1" color = "yellow" style="font-size: 45px;">WeShop</span>
+            <span class = "word col2" color = "orange"style="font-size: 45px">fighting Covid-19.</span>
+            <span class = "word col3" color = "limegreen"style="font-size: 45px">shopping made fun.</span>
+            <span class = "word col4" color = "mediumblue"style="font-size: 45px">a service for the consumer.</span>
+            <p><img src="Assets/images/iphone.png"  style="margin-left:600px; margin-top: 1px">
+        </h1>
+    </div>
+    <!--<script src="https://cdn.jsdelivr.net/gh/LeifMessinger/lQuery@latest/extras/RotatingText/rotating-text.min.js"></script>-->
+    <script>// Rotating Text credit to alphardex
+  var words = document.querySelectorAll(".word");
+  words.forEach(function(word) {
+    var letters = word.textContent.split("");
+    word.textContent = "";
+    letters.forEach(function(letter) {
+      var span = document.createElement("span");
+      if(word.getAttribute("color")) span.style.setProperty("color",word.getAttribute("color"));
+      if (letter == " ") {
+        span.textContent = " ";
+        span.className = "letter";
+        word.append(span);
+      } else {
+        span.textContent = letter;
+        span.className = "letter";
+        word.append(span);
+      }
+    });
+  });
+  var currentWordIndex = 0;
+  var maxWordIndex = words.length - 1;
+  words[currentWordIndex].style.opacity = "1";
+  var rotateText = function() {
+    var currentWord = words[currentWordIndex];
+    var nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+    // rotate out letters of current word
+    Array.from(currentWord.children).forEach(function(letter, i) {
+      setTimeout(function() {
+        letter.className = "letter out";
+      }, i * 40);
+    });
+    // reveal and rotate in letters of next word
+    nextWord.style.opacity = "1";
+    Array.from(nextWord.children).forEach(function(letter, i) {
+      letter.className = "letter behind";
+      setTimeout(function() {
+        letter.className = "letter in";
+      }, 500 + i * 20);
+    });
+    currentWordIndex =
+      currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+  };
+  setTimeout(rotateText, 1000);
+  setInterval(rotateText, 3000);</script>
+  </body>
+</html>
