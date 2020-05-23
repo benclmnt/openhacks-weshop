@@ -3,6 +3,7 @@ import React from 'react';
 function Home() {
   React.useEffect(() => {
     var words = document.querySelectorAll('.word');
+    console.log(words);
     words.forEach(function(word) {
       var letters = word.textContent.split('');
       word.textContent = '';
@@ -47,27 +48,27 @@ function Home() {
       currentWordIndex =
         currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
     };
-    setTimeout(rotateText, 1000);
-    setInterval(rotateText, 3000);
-  }, []);
+    const timer = setInterval(rotateText, 3000);
+    return () => clearInterval(timer);
+  },[]);
 
   return (
     <div>
-      <div class="rotating-text" style={{ marginTop: '20%' }}>
-        <h1 class="mobile-hide" style={{ fontSize: 45, color: 'white' }}>
+      <div className="rotating-text" style={{ marginTop: '20%' }}>
+        <h1 className="mobile-hide" style={{ fontSize: 45, color: 'white' }}>
           We are 
         </h1>
         <h1>
-          <span class="word col1" style={{ fontSize: 45, color: 'yellow' }}>
+          <span className="word col1" style={{ fontSize: 45, color: 'yellow' }}>
             WeShop
           </span>
-          <span class="word col2" style={{ fontSize: 45, color: 'orange' }}>
+          <span className="word col2" style={{ fontSize: 45, color: 'orange' }}>
             fighting Covid-19.
           </span>
-          <span class="word col3" style={{ fontSize: 45, color: 'limegreen' }}>
+          <span className="word col3" style={{ fontSize: 45, color: 'limegreen' }}>
             shopping made fun.
           </span>
-          <span class="word col4" style={{ fontSize: 45, color: 'mediumblue' }}>
+          <span className="word col4" style={{ fontSize: 45, color: 'mediumblue' }}>
             a service for the consumer.
           </span>
           <span>
