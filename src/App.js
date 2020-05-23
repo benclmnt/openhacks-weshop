@@ -13,6 +13,7 @@ function App() {
         <div className="main-container grey lighten-4">
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/navbar" component={Navbar} />
             {/* <Route path={url.CATEGORIES} component={Category} />
             <Route path={url.ITINERARY} component={Itinerary} />
             <Route path={url.CHECKOUT} component={Checkout} />
