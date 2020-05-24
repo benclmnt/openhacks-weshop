@@ -31,8 +31,7 @@ function Buyer() {
 
   React.useEffect(() => {
     var elems = document.querySelectorAll('.dropdown-trigger');
-    M.Dropdown.init(elems, {
-    });
+    M.Dropdown.init(elems, {});
   }, []);
 
   return (
@@ -41,26 +40,48 @@ function Buyer() {
         <div style={{ flex: 1, textAlign: 'center' }}>
           <img src={Jane} style={{ height: 150 }} />
           <h4>Jane Doe</h4>
-          <p>Member since 2012 <br />
-          Based in San Francisco, California </p>
-          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Frequented</a>
-          <a class='dropdown-trigger btn' href='#' data-target='dropdown2'>Payment</a>
-          <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="#">Walmart</a></li>
-            <li><a href="#">Target</a></li>
-            <li><a href="#">Whole Foods</a></li>
-            <li><a href="#">Amazon Delivery</a></li>
-            <li><a href="#">Intranet</a></li>
+          <p>
+            Member since 2012 <br />
+            Based in San Francisco, California{' '}
+          </p>
+          <a class="dropdown-trigger btn" href="#" data-target="dropdown1">
+            Frequented
+          </a>
+          <a class="dropdown-trigger btn" href="#" data-target="dropdown2">
+            Payment
+          </a>
+          <ul id="dropdown1" class="dropdown-content">
+            <li>
+              <a href="#">Walmart</a>
+            </li>
+            <li>
+              <a href="#">Target</a>
+            </li>
+            <li>
+              <a href="#">Whole Foods</a>
+            </li>
+            <li>
+              <a href="#">Amazon Delivery</a>
+            </li>
+            <li>
+              <a href="#">Intranet</a>
+            </li>
           </ul>
-          <ul id='dropdown2' class='dropdown-content'>
-            <li><a href="#">PayPal</a></li>
-            <li><a href="#">Apple Pay </a></li>
-            <li><a href="#">Master Card </a></li>
+          <ul id="dropdown2" class="dropdown-content">
+            <li>
+              <a href="#">PayPal</a>
+            </li>
+            <li>
+              <a href="#">Apple Pay </a>
+            </li>
+            <li>
+              <a href="#">Master Card </a>
+            </li>
           </ul>
         </div>
         <div style={{ flex: 2 }}>
-          <h5>Purchases: </h5> 
-          <div style={{height: 20}} />
+          <h5>Purchases: </h5>
+          <div style={{ height: 20 }} />
           <ul class="collapsible">
             {orders.map((order, index) => (
               <li>
@@ -111,7 +132,13 @@ function Buyer() {
                       )}
                     </tbody>
                   </table>
-                  <p>Shopped by: <Link to='/profile/shopper/John-Doe'>John Doe  </Link><span><img src={Verified} style={{height: 20}}/></span></p>
+                  <p>
+                    Shopped by:{' '}
+                    <Link to="/profile/shopper/John-Doe">John Doe </Link>
+                    <span>
+                      <img src={Verified} style={{ height: 20 }} />
+                    </span>
+                  </p>
                 </div>
               </li>
             ))}
