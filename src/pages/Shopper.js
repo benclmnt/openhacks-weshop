@@ -7,6 +7,8 @@ import John from '../assets/John.jpg';
 import Verified from '../assets/verified.jpg';
 import { Link } from 'react-router-dom';
 
+import '../css/storesearch.css';
+
 function Shopper() {
   const { data: items } = useCart();
   const [orders, setOrders] = React.useState([]);
@@ -36,9 +38,9 @@ function Shopper() {
 
   return (
     <div className="container">
-      <div style={{ display: 'flex', padding: 20, margin: 20 }}>
+      <div className="ss-container-normal" style={{ padding: 20, margin: 20 }}>
         <div style={{ flex: 1, textAlign: 'center' }}>
-          <img src={John} style={{ height: 150 }} />
+          <img class="circle" src={John} style={{ height: 150 }} />
           <h4>John Doe</h4>
           <img src={Verified} style={{ height: 20 }} /> Certified by WeShop
           <p>
@@ -76,9 +78,9 @@ function Shopper() {
                   <i class="fas fa-shopping-cart" />
                   {`Order ${orders.length - index}`}
                   {index < 1 ? (
-                    <span class="new badge">Arriving</span>
+                    <span class="orange badge white-text">On the way</span>
                   ) : (
-                    <span class="orange badge white-text">Arrived</span>
+                    <span class="teal badge white-text">Completed</span>
                   )}
                 </div>
                 <div class="collapsible-body">

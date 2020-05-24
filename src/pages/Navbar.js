@@ -47,7 +47,7 @@ const Navbar = props => {
         {isLoggedIn() ? (
           <>
             <li>
-              <NavLink to="/">Account</NavLink>
+              <NavLink to="/profile/buyer/Jane-Doe">Account</NavLink>
             </li>
             <li>
               <Link to="/" onClick={handleLogout}>
@@ -61,6 +61,14 @@ const Navbar = props => {
             <NavLink to="/login"> Login </NavLink>{' '}
           </li>
         )}
+        <li>
+          <NavLink to="/store">Store Near You</NavLink>
+        </li>
+        <li>
+          <NavLink to="/store/ad73c946-7ffb-4fea-9ede-721ed152d275">
+            Test Store
+          </NavLink>
+        </li>
       </ul>
     );
   }
@@ -90,7 +98,7 @@ const Navbar = props => {
 
         <ul id="dropdownLogout" className="dropdown-content">
           <li>
-            <Link to="/">Account</Link>
+            <Link to="/profile/buyer/Jane-Doe">Account</Link>
           </li>
           <li>
             <Link to="/" onClick={handleLogout}>

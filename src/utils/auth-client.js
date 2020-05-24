@@ -16,28 +16,30 @@ function getUser() {
   if (!token) {
     return Promise.resolve({
       username: 'Jane Doe',
-      initials: 'WA',
+      initials: 'JD',
       id: '2020'
     });
   }
   return Promise.resolve({
-    initials: 'WS',
-    id: '1234'
+    username: 'Jane Doe',
+    initials: 'JD',
+    id: '2020'
   });
   // return client(API_WHOAMI).then(data => data.user);
 }
 
 function login({ email, password }) {
-  return client(API_LOGIN, { body: { user: { email, password } } }).then(
-    handleUserResponse
-  );
+  return getUser().then(user => handleUserResponse(user, 'jane-doe'))
+  // return client(API_LOGIN, { body: { user: { email, password } } }).then(
+  //   handleUserResponse
+  // );
 }
 
 function register({ name, email, password }) {
   return client(API_REGISTER, {
     body: { user: { name, email, password } },
     redirectTo: LOGIN
-  });
+  }).finally(window.location.assign(LOGIN));
 }
 
 function logout() {

@@ -6,6 +6,7 @@ import { useCart } from '../context/cart-context';
 import Jane from '../assets/Jane.jpg';
 import Verified from '../assets/verified.jpg';
 import { Link } from 'react-router-dom';
+import '../css/storesearch.css';
 
 function Buyer() {
   const { data: items } = useCart();
@@ -36,9 +37,9 @@ function Buyer() {
 
   return (
     <div className="container">
-      <div style={{ display: 'flex', padding: 20, margin: 20 }}>
+      <div className="ss-container-normal" style={{ padding: 20, margin: 20 }}>
         <div style={{ flex: 1, textAlign: 'center' }}>
-          <img src={Jane} style={{ height: 150 }} />
+          <img class="circle" src={Jane} style={{ height: 150 }} />
           <h4>Jane Doe</h4>
           <p>
             Member since 2012 <br />
@@ -89,7 +90,7 @@ function Buyer() {
                   <i class="fas fa-shopping-cart" />
                   {`Order ${orders.length - index}`}
                   {index < 1 ? (
-                    <span class="new badge">Arriving</span>
+                    <span class="teal badge white-text">Arriving</span>
                   ) : (
                     <span class="orange badge white-text">Arrived</span>
                   )}

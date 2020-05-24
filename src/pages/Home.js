@@ -7,6 +7,8 @@ import Money from '../assets/money.png';
 import { Link } from 'react-router-dom';
 import { REGISTER } from '../constants/url';
 
+import '../css/storesearch.css';
+
 function Home() {
   return (
     <>
@@ -16,7 +18,7 @@ function Home() {
           style={{ display: 'flex', padding: '20px 0' }}
         >
           <div style={{ flex: 2 }}>
-            <h1>Help elderly shop groceries during this pandemic</h1>
+            <h2>Help elderly shop groceries during this pandemic</h2>
             <h5 className="word">and get bonuses!</h5>
             <div style={{ height: 20 }} />
             <Link
@@ -27,14 +29,14 @@ function Home() {
               Sign up now!
             </Link>
           </div>
-          <div style={{ flex: 1, textAlign: 'right' }}>
+          <div className="hide-on-small" style={{ flex: 1, textAlign: 'right' }}>
             <img src={Iphone} style={{ height: 400 }} />
           </div>
         </div>
       </div>
       <div className="container" style={{ padding: '20px 0' }}>
         <h4 className="center">How does WeShop helps you?</h4>
-        <div style={{ display: 'flex', paddingTop: 40 }}>
+        <div className="ss-container" style={{ paddingTop: 40 }}>
           <div style={{ flex: 1, textAlign: 'center' }}>
             <img src={Groceries} style={{ height: 150 }} />
             <div style={{ padding: 20, margin: 'auto' }}>

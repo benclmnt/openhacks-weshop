@@ -3,6 +3,11 @@
   padding: 20px;
 }
 
+.ss-container-normal {
+  display: flex;
+  padding: 20px;
+}
+
 .ss-form {
   flex: 1;
   padding-right: 20px;
@@ -20,5 +25,8 @@
 @media (max-width: 768px) {
   .ss-container{
     flex-direction: column-reverse;
+  }
+  .ss-container-normal{
+    flex-direction: column;
   }
 }
