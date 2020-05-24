@@ -1,6 +1,9 @@
 import React from 'react';
 
 import Iphone from '../assets/iphone.png';
+import Groceries from '../assets/groceries.png';
+import Heart from '../assets/heart.png';
+import Money from '../assets/money.png';
 import { Link } from 'react-router-dom';
 import { REGISTER } from '../constants/url';
 
@@ -23,16 +26,16 @@ function Home() {
       <h4 className="center">How does WeShop helps you?</h4>
       <div style={{display: "flex", paddingTop: 40}}>
         <div style={{flex: 1, textAlign: "center"}}>
-          <img src={Iphone} style={{height: 200}}/>
-          <div>Test 1</div>
+          <img src={Groceries} style={{height: 150}}/>
+          <div style={{padding: 20, margin: "auto"}}>Wide variety of groceries to choose from</div>
         </div>
         <div style={{flex: 1, textAlign: "center"}}>
-          <img src={Iphone} style={{height: 200}}/>
-          <div>Test 1</div>
+          <img src={Heart} style={{height: 150}}/>
+          <div style={{padding: 20, margin: "auto"}}>Helps reduce crowds at grocery stores to combat the outbreak of Covid-19 and reduce the risks for the vulnerables</div>
         </div>
         <div style={{flex: 1, textAlign: "center"}}>
-          <img src={Iphone} style={{height: 200}}/>
-          <div>Test 1</div>
+          <img src={Money} style={{height: 150}}/>
+          <div style={{padding: 20, margin: "auto"}}>More cost efficient with regards to delivery and sustainability</div>
         </div>
       </div>
     </div>
