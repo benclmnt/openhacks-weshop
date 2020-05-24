@@ -1,0 +1,42 @@
+[
+  {
+    "storeId": "b131c281-031b-4aa2-95ea-ed9b9f363e26",
+    "name": "Sleek",
+    "location": "-63.5909, 141.4466",
+    "imageUrl": "https://source.unsplash.com/640x480?random=59746",
+    "website": "https://steve.info",
+    "phone": "330.604.0620 x282"
+  },
+  {
+    "storeId": "ad73c946-7ffb-4fea-9ede-721ed152d275",
+    "name": "Ohio",
+    "location": "10.4823, 102.7049",
+    "imageUrl": "https://source.unsplash.com/640x480?random=34711",
+    "website": "http://gordon.info",
+    "phone": "580-394-0671"
+  },
+  {
+    "storeId": "73e238db-c836-4aa5-bcfd-c8602cad7e97",
+    "name": "dynamic",
+    "location": "17.5955, -110.0210",
+    "imageUrl": "https://source.unsplash.com/640x480?random=81559",
+    "website": "https://trey.biz",
+    "phone": "390.894.0381"
+  },
+  {
+    "storeId": "ee4d2e28-930e-41bb-be04-c71e670de087",
+    "name": "Monitored",
+    "location": "-39.0109, 117.5828",
+    "imageUrl": "https://source.unsplash.com/640x480?random=56343",
+    "website": "http://ava.com",
+    "phone": "(684) 514-4483 x7062"
+  },
+  {
+    "storeId": "5bd7f77c-bcce-43af-8768-348261dfa099",
+    "name": "Intranet",
+    "location": "42.5087, -141.7336",
+    "imageUrl": "https://source.unsplash.com/640x480?random=31106",
+    "website": "https://waino.com",
+    "phone": "1-794-669-1257 x032"
+  }
+]

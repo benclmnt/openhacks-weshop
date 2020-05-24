@@ -1,9 +1,10 @@
 import React from 'react';
 
 import { client } from '../utils/client';
-import data from './storeItems.json';
 import Items from './Items';
 import { API_CATALOGUE } from '../constants/api-url';
+
+import data from './storeItems.json';
 
 function Store(props) {
   const [items, setItems] = React.useState(null);
