@@ -24,7 +24,7 @@ function Item({ item, storeid }) {
         <img src={item.imageUrl} />
         {/* </div> */}
         <span className="card-title">{item.name}</span>
-        <button onClick={handleAdd} className="btn-floating halfway-fab waves-effect waves-light red">
+        <button onClick={handleAdd} className="btn-floating halfway-fab waves-effect waves-light teal">
           <i className="fas fa-plus" />
         </button>
         {

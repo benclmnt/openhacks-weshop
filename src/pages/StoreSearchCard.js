@@ -16,7 +16,7 @@ function StoreSearchCard({ store }) {
         </div>
         <div className="card-content">
           <p>{store.location}</p>
-          <p>{store.phone}</p>
+          <p><i className="fas fa-phone"></i> {store.phone}</p>
           <a href={store.website}>Website</a>
         </div>
       </div>
