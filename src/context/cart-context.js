@@ -5,9 +5,11 @@ const CartContext = React.createContext();
 function CartProvider(props) {
   const [data, setData] = useState([]); //array of items
 
-  // useEffect(() => {
-  //   window.localStorage.getItem('cart');
-  // }, []);
+  useEffect(() => {
+    if(window.localStorage.getItem('index') == null) {
+      window.localStorage.setItem('index', 1);
+    };
+  }, []);
 
   const addItem = (item, amount) => {
     if([...data].filter(x => item.id === x.id).length > 0) {

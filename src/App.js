@@ -8,6 +8,7 @@ import Register from './pages/Register.js';
 import Store from './pages/Store.js';
 import StoreSearch from './pages/StoreSearch.js';
 import Checkout from './pages/Checkout.js';
+import Footer from './pages/Footer.js';
 import NotFound from './pages/404.js';
 import * as url from './constants/url';
 
@@ -36,7 +37,7 @@ function App() {
             <Route component={NotFound} />
           </Switch>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );

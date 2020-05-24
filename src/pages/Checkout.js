@@ -14,6 +14,10 @@ function Checkout(props) {
     e.preventDefault();
     console.log("ordered: ");
     console.log(items);
+    let i = Number(window.localStorage.getItem('index'));
+    window.localStorage.setItem(`order ${i}`, JSON.stringify(items));
+    i += 1;
+    window.localStorage.setItem('index', i);
     setTimeout(() => window.location.assign('/checkout?redirect=success'), 2000);
   }
 
@@ -25,7 +29,7 @@ function Checkout(props) {
         <h5>Here are your items:</h5>
         {items.length > 0 ? (
           <>
-        <table class="striped">
+        <table className="striped">
           <thead style={{borderBottom: "1px solid black"}}>
             <tr>
               <th>Item Name</th>
