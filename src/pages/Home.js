@@ -29,7 +29,10 @@ function Home() {
               Sign up now!
             </Link>
           </div>
-          <div className="hide-on-small" style={{ flex: 1, textAlign: 'right' }}>
+          <div
+            className="hide-on-small"
+            style={{ flex: 1, textAlign: 'right' }}
+          >
             <img src={Iphone} style={{ height: 400 }} />
           </div>
         </div>

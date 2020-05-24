@@ -29,7 +29,7 @@ function getUser() {
 }
 
 function login({ email, password }) {
-  return getUser().then(user => handleUserResponse(user, 'jane-doe'))
+  return getUser().then(user => handleUserResponse(user, 'jane-doe'));
   // return client(API_LOGIN, { body: { user: { email, password } } }).then(
   //   handleUserResponse
   // );
