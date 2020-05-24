@@ -14,7 +14,11 @@ function handleUserResponse({ token, ...user }) {
 function getUser() {
   const token = getToken();
   if (!token) {
-    return Promise.resolve(null);
+    return Promise.resolve({
+      username: 'Jane Doe',
+      initials: 'WA',
+      id: '2020'
+    });
   }
   return Promise.resolve({
     initials: 'WS',

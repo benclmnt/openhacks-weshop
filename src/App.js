@@ -9,6 +9,8 @@ import Store from './pages/Store.js';
 import StoreSearch from './pages/StoreSearch.js';
 import Checkout from './pages/Checkout.js';
 import Footer from './pages/Footer.js';
+import Buyer from './pages/Buyer.js';
+import Shopper from './pages/Shopper.js';
 import NotFound from './pages/404.js';
 import * as url from './constants/url';
 
@@ -25,6 +27,8 @@ function App() {
             <Route path={url.STORE} component={Store} />
             <Route path={url.STORE_SEARCH} component={StoreSearch} />
             <Route path={url.CHECKOUT} component={Checkout} />
+            <Route path={url.BUYER_PROFILE} component={Buyer} />
+            <Route path={url.SHOPPER_PROFILE} component={Shopper} />
             {/* <Route path={url.CATEGORIES} component={Category} />
             <Route path={url.CHECKOUT} component={Checkout} />
 

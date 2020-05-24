@@ -12,16 +12,20 @@ function StoreSearchCard({ store }) {
           {/* <div className="image-content"> */}
           <img src={store.imageUrl} />
           {/* </div> */}
-          <span className="card-title"><b>{store.name} Store</b></span>
+          <span className="card-title">
+            <b>{store.name} Store</b>
+          </span>
         </div>
         <div className="card-content">
           <p>{store.location}</p>
-          <p><i className="fas fa-phone"></i> {store.phone}</p>
+          <p>
+            <i className="fas fa-phone"></i> {store.phone}
+          </p>
           <a href={store.website}>Website</a>
         </div>
       </div>
     </Link>
-  )
+  );
 }
 
-export default StoreSearchCard
+export default StoreSearchCard;

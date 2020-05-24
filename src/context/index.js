@@ -7,9 +7,7 @@ function AppProviders({ children }) {
   return (
     <AuthProvider>
       <UserProvider>
-        <CartProvider>
-          {children}
-        </CartProvider>
+        <CartProvider>{children}</CartProvider>
       </UserProvider>
     </AuthProvider>
   );

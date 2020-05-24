@@ -24,11 +24,18 @@ function Store(props) {
   }, []);
 
   const itemsList = data.map((item, index) => (
-    <Items item={item} storeid={storeid} key={index}/>
+    <Items item={item} storeid={storeid} key={index} />
   ));
   return data.length > 0 ? (
     <div className="row container">
-      <h3>Walmart <span className="right"><Link to={CHECKOUT} className="btn">Proceed to Checkout</Link></span></h3>
+      <h3>
+        Walmart{' '}
+        <span className="right">
+          <Link to={CHECKOUT} className="btn">
+            Proceed to Checkout
+          </Link>
+        </span>
+      </h3>
       {itemsList}
     </div>
   ) : (
