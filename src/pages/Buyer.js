@@ -89,7 +89,9 @@ function Buyer() {
                 <div class="collapsible-header">
                   <i class="fas fa-shopping-cart" />
                   {`Order ${orders.length - index}`}
-                  {index < 1 ? (
+                  {index == 0 ? (
+                    <span class="red badge white-text">Pending payment</span>
+                  ) : index == 1 ? (
                     <span class="teal badge white-text">Arriving</span>
                   ) : (
                     <span class="orange badge white-text">Arrived</span>

@@ -69,6 +69,62 @@ function Shopper() {
           </ul>
         </div>
         <div style={{ flex: 2 }}>
+          <h5>New orders!</h5>
+          <ul class="collapsible">
+            {orders.length > 0 &&
+              [orders[0]].map((order, index) => (
+                <li>
+                  <div class="collapsible-header">
+                    <i class="fas fa-shopping-cart" />
+                    {`Order ${123 + orders.length - index}`}
+                    <span class="teal new badge white-text"></span>
+                  </div>
+                  <div class="collapsible-body">
+                    <table className="striped">
+                      <thead style={{ borderBottom: '1px solid black' }}>
+                        <tr>
+                          <th>Item Name</th>
+                          <th>Item Price</th>
+                          <th>Item Quantity</th>
+                          <th>Total Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {order.map((item, index) => (
+                          <tr key={index}>
+                            <td>{item.name}</td>
+                            <td>$ {item.price}</td>
+                            <td>{item.amount}</td>
+                            <td>$ {item.amount * Number(item.price)}</td>
+                          </tr>
+                        ))}
+                        {order.reduce(
+                          (x, item) => x + item.amount * Number(item.price),
+                          0
+                        ) > 0 && (
+                          <tr style={{ borderTop: '1px solid black' }}>
+                            <td>Total: </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                              ${' '}
+                              {order.reduce(
+                                (x, item) =>
+                                  x + item.amount * Number(item.price),
+                                0
+                              )}
+                            </td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                    <p>
+                      <button className="btn">Grab the order!</button>
+                    </p>
+                  </div>
+                </li>
+              ))}
+          </ul>
           <h5>Shopped by John: </h5>
           <div style={{ height: 20 }} />
           <ul class="collapsible">
